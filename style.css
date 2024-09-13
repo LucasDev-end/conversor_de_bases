@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#div_principal{
+    background-color: rgb(150, 150, 150);
+    padding: 50px;
+    border-radius: 20px;
+}
+#ipt_num{
+    width: 60px;
+    text-align: center;
+}
+#ipt_base{
+    width: 30px;
+    text-align: center;
+}

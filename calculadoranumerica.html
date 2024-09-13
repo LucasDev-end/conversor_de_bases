@@ -8,41 +8,36 @@
 
 <body bgcolor="#00ffff">
     <div id="div_principal">
-    <center>
         <h1>Bem-Vindo ao Conversor Numerico</h1>
-
-<br><br>
-
-        <h3>Insira o número e base</h3>
-        <input id="ipt_num" type="text" placeholder="Número">
-        <input id="ipt_base" type="text" placeholder="Base">
-
-<br><br>
-
-        <h3>converter para:</h3>
-
-
-        <input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
-<br>
-        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(0, 0, 0); width: 15%; height: 40px; font-weight: 500;" id="demo2"></div>
-
-<br><br>
-
-        <input onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
-<br>
-        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(7, 7, 7); width: 15%; height: 40px; font-weight: 500;" id="demo3"></div>
+    
+        <h3>INSIRA O NÚMERO E SELECIONE A BASE</h3>
+        <input id="ipt_num" type="text" placeholder="Número"><br>
+    
+        <select name="Bases" id="select_bases">
+            <option value="">Escolha uma base</option>
+            <option value="decimal">Decimal</option>
+            <option value="binario">Binário</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select>
+    
+        <br><br>
+    
+        <h3>CONVERTER PARA:</h3>
+        <select name="Bases" id="select_bases">
+            <option value="">Escolha uma base</option>
+            <option value="decimal">Decimal</option>
+            <option value="binario">Binário</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select>
+    
+    
+    
+        <button onclick="converter()">Converter</button>
         
-<br><br>
-
-        <input onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
-<br>
         <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(5, 5, 5); width: 60%; height: 50px; font-weight: 500;" id="demo4"></div>
-
-<br><br>
-
-<button onclick="converter()">Converter</button>
-    </center>
-</div>
+    </div>
 
 
 
@@ -53,11 +48,11 @@ function converter() {
     
     var decimal = Number (demo1.value);
 
-let octal = decimal.toString(8);
+    let octal = decimal.toString(8);
 
-let hexadecimal = decimal.toString(16);
+    let hexadecimal = decimal.toString(16);
 
-let binaria = decimal.toString(2);
+    let binaria = decimal.toString(2);
 
 console.log (decimal);
 console.log (octal);
@@ -87,22 +82,3 @@ document.bgColor = "#00ffff";
 
 
 </script></body></html>
-
-<style>
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    #div_principal{
-        background-color: rgb(150, 150, 150);
-        padding: 50px;
-        border-radius: 20px;
-    }
-    #ipt_num{
-        width: 60px;
-        text-align: center;
-    }
-    #ipt_base{
-        width: 30px;
-        text-align: center;
-    }
-</style>
