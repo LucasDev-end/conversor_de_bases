@@ -14,9 +14,9 @@
         <h1>Bem-Vindo ao Conversor Numerico</h1>
     
         <h3>INSIRA O NÚMERO E SELECIONE A BASE</h3>
-        <input id="ipt_num" type="text" placeholder="Número"><br>
+        <input class="ipt" id="ipt_num" type="text" placeholder="Número"><br>
     
-        <select name="Bases" id="select_bases">
+        <select class="select" name="Bases" id="select_bases">
             <option value="">Escolha uma base</option>
             <option value="decimal">Decimal</option>
             <option value="binario">Binário</option>
@@ -24,22 +24,21 @@
             <option value="hexadecimal">Hexadecimal</option>
         </select>
     
-        <br><br>
     
         <h3>CONVERTER PARA:</h3>
-        <select name="Bases" id="select_bases2">
+        <select class="select" name="Bases" id="select_bases2">
             <option value="">Escolha uma base</option>
             <option value="decimal">Decimal</option>
             <option value="binario">Binário</option>
             <option value="octal">Octal</option>
             <option value="hexadecimal">Hexadecimal</option>
-        </select>
+        </select><br>
     
     
     
-        <button onclick="converter()">Converter</button>
+        <button onclick="converter()">CONVERTER</button>
 
-        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(5, 5, 5); width: 60%; height: 50px; font-weight: 500;" id="demo"></div>
+        <div id="demo" class="hidden"></div>
     </div>
 
 </body>

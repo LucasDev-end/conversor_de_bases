@@ -22,7 +22,7 @@ function converter() {
     
     // Converter para
     var segEscolha = select_bases2.value;
-    demo.style.display = 'block'
+    demo.style.display = 'flex';
     
 
     if ( segEscolha == "decimal" ){
