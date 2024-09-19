@@ -9,7 +9,7 @@
     
 </head>
 
-<body bgcolor="#00ffff">
+<body >
     <div id="div_principal">
         <h1>Bem-Vindo ao Conversor Numerico</h1>
     
@@ -27,7 +27,7 @@
         <br><br>
     
         <h3>CONVERTER PARA:</h3>
-        <select name="Bases" id="select_bases">
+        <select name="Bases" id="select_bases2">
             <option value="">Escolha uma base</option>
             <option value="decimal">Decimal</option>
             <option value="binario">Binário</option>
@@ -39,45 +39,8 @@
     
         <button onclick="converter()">Converter</button>
 
-        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(5, 5, 5); width: 60%; height: 50px; font-weight: 500;" id="demo4"></div>
+        <div style="display: none; background-color: #dcdcdc; border-radius: 5px; padding: 5px; color: rgb(5, 5, 5); width: 60%; height: 50px; font-weight: 500;" id="demo"></div>
     </div>
 
-</body></html>
-<script>
-
-    function converter() {
-        
-        var num = Number (ipt_num.value);
-
-        let octal = num.toString(8);
-        let hexadecimal = num.toString(16);
-        let binaria = num.toString(2);
-
-    console.log (num);
-    console.log (octal);
-    console.log (hexadecimal);
-    console.log (binaria);
-    
-    document.getElementById("demo1").innerHTML = ` ${num}`;
-    document.getElementById("demo2").innerHTML = ` ${octal}`;
-    document.getElementById("demo3").innerHTML = ` ${hexadecimal}`;
-    document.getElementById("demo4").innerHTML = ` ${binaria}`;
-    
-    
-    }
-    
-    function aparecer_bin() {
-        demo4.style.display = 'block'
-    }
-    
-    function aparecer_hexa() {
-        demo3.style.display = 'block'
-    }
-    
-    function aparecer_octal() {
-        demo2.style.display = 'block'
-    }
-    document.bgColor = "#00ffff";
-    
-    
-    </script>
+</body>
+</html>

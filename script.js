@@ -1,38 +1,44 @@
-<script>
+function converter() {
+    //Receber numero e base
+    
+    var num = ipt_num.value;
+    var priEscolha = select_bases.value;
+    //Convertendo para decimal
+    let decimal = 0
+    if( priEscolha == "decimal"){
+        num = Number(num); 
+        decimal=num;
+    }else{
+        if(priEscolha == "binario"){
+            decimal= parseInt(num, 2);     
+        }
+        if(priEscolha == "octal"){
+             decimal= parseInt(num, 8);
+        }
+        if(priEscolha == "hexadecimal"){
+            decimal= parseInt(num, 16);
+        }
+    }        
+    
+    // Converter para
+    var segEscolha = select_bases2.value;
+    demo.style.display = 'block'
+    
 
-    function converter() {
+    if ( segEscolha == "decimal" ){
+        document.getElementById("demo").innerHTML = `Decimal: ${decimal}`;
+    }
+    if ( segEscolha == "binario" ){
+        let binaria = decimal.toString(2);
+        document.getElementById("demo").innerHTML =  `Binário: ${binaria}`;
+    }
+    if ( segEscolha == "octal" ){
+        let octal = decimal.toString(8);
+        document.getElementById("demo").innerHTML =  `Octal: ${octal}`;
         
-        var num = Number (ipt_num.value);
-
-        let octal = num.toString(8);
-        let hexadecimal = num.toString(16);
-        let binaria = num.toString(2);
-
-    console.log (num);
-    console.log (octal);
-    console.log (hexadecimal);
-    console.log (binaria);
-    
-    document.getElementById("demo1").innerHTML = ` ${num}`;
-    document.getElementById("demo2").innerHTML = ` ${octal}`;
-    document.getElementById("demo3").innerHTML = ` ${hexadecimal}`;
-    document.getElementById("demo4").innerHTML = ` ${binaria}`;
-    
-    
     }
-    
-    function aparecer_bin() {
-        demo4.style.display = 'block'
-    }
-    
-    function aparecer_hexa() {
-        demo3.style.display = 'block'
-    }
-    
-    function aparecer_octal() {
-        demo2.style.display = 'block'
-    }
-    document.bgColor = "#00ffff";
-    
-    
-    </script>
+    if ( segEscolha == "hexadecimal" ){
+        let hexadecimal = decimal.toString(16);
+        document.getElementById("demo").innerHTML =  `Hexadecimal: ${hexadecimal}`;
+    }  
+}    
