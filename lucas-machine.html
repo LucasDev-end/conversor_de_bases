@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Numerico</title>
+    <link rel="stylesheet" href="style_lucas.css">
+    <script type="text/javascript" src="script_lucas.js"></script>
+    
+</head>
+
+<body >
+
+    <video id="bgVideo" autoplay muted loop>
+        <source src="videos/Groot.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
+
+    <!-- Conteúdo que aparecerá sobre o vídeo -->
+    <div id="div_principal">
+        <h1>Bem-Vindo ao Conversor Numerico</h1>
+    
+        <h3>INSIRA O NÚMERO E SELECIONE A BASE</h3>
+        <input class="ipt" id="ipt_num" type="text" placeholder="Número"><br>
+    
+        <select class="select" name="Bases" id="select_bases">
+            <option value="#">Escolha uma base</option>
+            <option value="decimal">Decimal</option>
+            <option value="binario">Binário</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select>
+    
+    
+        <h3>CONVERTER PARA:</h3>
+        <select class="select" name="Bases" id="select_bases2">
+            <option value="#">Escolha uma base</option>
+            <option value="decimal">Decimal</option>
+            <option value="binario">Binário</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select><br>
+    
+        <button onclick="converter()">CONVERTER</button>
+
+        <div id="demo" class="hidden"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel's Machine</title>
+    <link rel="stylesheet" href="style_lucas _index.css">
+</head>
+<body>
+    <video id="video" autoplay controls>
+        <source src="videos/Marvel.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+
+    <!-- Coloque o script no final da página -->
+    <script>
+        // Quando o vídeo acabar, redireciona para outra página
+        document.getElementById('video').addEventListener('ended', function() {
+            window.location.href = 'lucas-machine.html'; // Altere para o link desejado
+        });
+    </script>
+
+</body>
+</html>
