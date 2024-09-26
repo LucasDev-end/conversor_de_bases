@@ -9,48 +9,61 @@
 </head>
 
 <body >
+    <!-- <video id="bgVideo" autoplay muted loop>
+        <source src="videos/Deadpool.mp4" type="video/mp4">
+    </video> -->
+    <div class="header">
+        <div class="menu">
+            <div>
+                <a href="#"><span class="home">Calculaddora</span></a>
+            </div>
 
-    <video id="bgVideo" autoplay muted loop>
-        <source src="videos/Groot.mp4" type="video/mp4">
-    </video>
+            <div>
+                <a href="#"><span class="home">Conversor</span></a>
+            </div>
+        </div>
 
-    <!-- Conteúdo que aparecerá sobre o vídeo -->
-    <div id="div_principal">
-        <h1>Marvel'S Machine</h1>
-        <br>
-        <br>
-    
-        <h3>INSIRA O NÚMERO E SELECIONE A BASE</h3>
-        <br>
-        <input class="ipt" id="ipt_num" type="text" placeholder="Número"><br>
-    
-        <select class="select" name="Bases" id="select_bases">
-            <option value="#">Escolha uma base</option>
-            <option value="decimal">Decimal</option>
-            <option value="binario">Binário</option>
-            <option value="octal">Octal</option>
-            <option value="hexadecimal">Hexadecimal</option>
-        </select>
-        <br>
-        <br>
-        <br>
-    
-    
-        <h3>CONVERTER PARA:</h3>
-        <select class="select" name="Bases" id="select_bases2">
-            <option value="#">Escolha uma base</option>
-            <option value="decimal">Decimal</option>
-            <option value="binario">Binário</option>
-            <option value="octal">Octal</option>
-            <option value="hexadecimal">Hexadecimal</option>
-        </select><br>
-    
-        <button onclick="converter()">CONVERTER</button>
-        <br>
-        <br>
-        <br>
-
-        <div id="demo" class="hidden"></div>
+        
+        <!-- Conteúdo que aparecerá sobre o vídeo -->
+        <div id="div_principal">
+            <div id="div_calc">
+                <h1>Marvel'S Machine</h1>
+                <br>
+                <br>
+                
+                <h3>Converta as bases</h3>
+                <br>
+                <input class="ipt" id="ipt_num" type="text" placeholder="Número"><br>
+                
+                <select class="select" name="Bases" id="select_bases">
+                    <option value="#">Escolha uma base</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="binario">Binário</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                
+                
+                <h3>CONVERTER PARA:</h3>
+                <select class="select" name="Bases" id="select_bases2">
+                    <option value="#">Escolha uma base</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="binario">Binário</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select><br>
+            
+                <button onclick="converter()">CONVERTER</button>
+                <br>
+                <br>
+                <br>
+                
+                <div id="demo" class="hidden"></div>
+            </div>
+        </div>
     </div>
 
 </body>
