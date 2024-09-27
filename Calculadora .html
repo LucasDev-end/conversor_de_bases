@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Numerico</title>
+    <link rel="stylesheet" href="style/style_lucas.css">
+    <script type="text/javascript" src="script/calcular.js"></script>
+    
+</head>
+
+<body >
+    <div class="header">
+        <div class="menu">
+            <div>
+                <span>
+                    <a href="Calculadora .html">Calculadora</a>
+                </span>
+            </div>
+
+            <div>
+                <span>
+                    <a href="Conversor.html">Conversor</a>
+                </span>
+            </div>
+        </div>
+
+        <div id="div_principal">
+            <div id="div_calc">
+                <div class="calc">
+                    <h1>Spider'S Machine</h1>
+                </div>
+                <div class="calc">
+                    <h3><span>Converta as bases</span></h3>
+                <input class="ipt" id="ipt_num1" type="text" placeholder="Número">
+
+                <select class="select" name="Bases" id="select_conta1">
+                <option value="#" disabled selected>Escolha uma base</option>
+                <option value="decimal">Decimal</option>
+                <option value="binario">Binário</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="calc">
+                <select class="select" name="Operadores" id="select_operador">
+                    <option value="#" disabled selected>Escolha o operador</option>
+                    <option value="somar">+</option>
+                    <option value="subtrair">-</option>
+                    <option value="multiplicar">x</option>
+                    <option value="divisao">/</option>
+                </select><br>
+            </div>
+
+            <div class="calc">
+                <input class="ipt" id="ipt_num2" type="text" placeholder="Número">
+        
+                <select class="select" name="Bases" id="select_conta2">
+                    <option value="#" disabled selected>Escolha uma base</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="binario">Binário</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+                
+            <button onclick="calcular()">CONVERTER</button>
+        </div>      
+    </div>
+    <div  id="demo" class="hidden"></div>
+</div>
+</div>
+
+</body>
+</html>

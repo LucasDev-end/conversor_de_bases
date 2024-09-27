@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family:"jmh the spider";
+    font-style:normal;
+    font-weight:400;
+    src:local('JMH THE SPIDER'),url('https://fonts.cdnfonts.com/s/28195/JMH THE SPIDER.woff')format('woff')
+}
+
+/*@import url('https://fonts.cdnfonts.com/css/jmh-the-spider');*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../videos/miles.webp');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    /* justify-content: center ;
+    align-items: center; */
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header */
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly; /*Define a posição na horizontal*/
+    align-items: flex-end;/*define a posição na vertical*/
+    height: 15%;
+}
+
+.menu div{
+    display: flex;
+
+}
+
+.header .menu div a {
+    font-size: 450%;
+    font-family: JMH THE SPIDER;
+    color: #b70b0c;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black; /* Simula a borda criando sombras ao redor do texto */
+}
+
+.header .menu div a:hover{
+    color: white;
+}
+
+/* Definir o estilo do vídeo de fundo */
+#bgVideo {
+    position: fixed;
+    display: flex;
+    margin-top: 0%;
+    margin-bottom: -3%;
+    min-width: 100%; /* O vídeo ocupa 100% da largura */
+    min-height: 100%; /* O vídeo ocupa 100% da altura */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    object-fit: cover; /* Cobre a tela completamente */
+}
+
+/* Estilo para o conteúdo sobre o vídeo */
+#div_principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#div_calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #022c60;
+    border-radius: 5px;
+    height: 85%;
+    width: 40%;
+}
+
+.ipt{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid;
+    cursor: pointer;
+    font-size: large;
+}
+
+.select{
+    font-size: large;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+button{
+    height: 10%;
+    width: 50%;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: 0.5s;
+    background-color: white;
+    border: 2px solid white;
+    font-family: JMH THE SPIDER;
+}
+button:hover{
+    transition: 0.5s;
+    background-color: rgb(146, 10, 10);
+    border: 2px solid rgb(146, 10, 10);
+}
+
+.hidden{
+    display: none;
+}
+#demo{
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px; 
+    margin-top: 15px;
+    color: rgb(5, 5, 5); 
+    width: 400px; 
+    height: 50px; 
+    font-size: large;
+    font-weight: 700;
+    justify-content: center;    
+    align-items: center;
+}
+
+#div_calc .calc{
+    font-size: 180%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.calc h3 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.calc h1{
+    color: white;
+    font-family: JMH THE SPIDER;
+    color:#b70b0c;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black; /* Simula a borda criando sombras ao redor do texto */
+}
